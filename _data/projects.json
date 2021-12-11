@@ -22,9 +22,21 @@
 		"tags": ["R","Rstudio"]
 	},
 	{
-		"name": "ABM",
+		"name": "NetLogo",
 		"image": "placeholder.jpg",
 		"date": "Oct 2021",
 		"tags": ["NetLogo","ABM"]
+	},
+	{
+		"name": "Epidata",
+		"image": "placeholder.jpg",
+		"date": "Oct 2021",
+		"tags": ["Epidata","data"]
+	},
+	{
+		"name": "Ubuntu",
+		"image": "placeholder.jpg",
+		"date": "Oct 2021",
+		"tags": ["Ubuntu"]
 	}
 ]
