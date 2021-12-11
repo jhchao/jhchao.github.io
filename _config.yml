@@ -1,9 +1,9 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
-disqus_shortname: stackproblems
+title: Computational Social Science 
+description: 一个STATA\Python\R语言\Netlogo学习记录博客
+author: 蒋和超
+github: https://github.com/jhchao
+about: 西南财经大学社会发展研究院，社会学博士，硕导.主要研究方向：应用社会学、金融社会学、计算社会学.
+disqus_shortname: CSS
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
@@ -15,30 +15,19 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
     - icon: fa-github
-      link: "https://github.com/agusmakmun"
+      link: "https://github.com/jhchao"
 
-share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
+
 
 urls:
     - text: About Me
       url: /about/
     - text: My Projects
       url: /projects/
-    - text: XML Feed
-      url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+
+url: "https://jhchao.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
