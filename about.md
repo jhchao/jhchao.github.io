@@ -9,11 +9,12 @@ permalink: /about/
 email: jhchao[at]swufe.edu.cn
 
 
-##主讲课程
+主讲课程
+
 社会研究方法、社会统计学、社会福利与政策、社会学思想与方法
 
 
-##科研项目
+科研项目
 
 主持2021年度国家社科基金青年项目：特大城市居住空间分异的邻里效应及其治理研究（批准号：21CSH073）
 
@@ -26,9 +27,7 @@ email: jhchao[at]swufe.edu.cn
 参与教育部人文社会科学研究2008年度青年基金项目：城市底层服务业农民工劳动过程研究——以成渝特区为例（批准号：08JC840012）
 
 
-##学术成果
-
-###中文论文/著作
+学术成果
 
 蒋和超.利益风险、刻板印象与公共态度——城市居民对待农民工入户政策的态度.南京农业大学学报(社会科学版),2018,18(02):85-97. （CSSCI）
 
@@ -47,9 +46,6 @@ email: jhchao[at]swufe.edu.cn
 蒋和超.孟母“择邻”：中国城市儿童学业成就的邻里效应.社会科学文献出版社，2020.
 
 齐麟、彭华民、蒋和超.中国家庭社会经济地位能影响家庭金融素养吗——基于CHFS2017年数据的分析,2021(05):33-42.（CSSCI）
-
-
-###英文论文
 
 Jiang, H., Duan, T., Wang F. The effects of Parental Migration on Children's Mental Health in Rural China. Applied Research in Quality of life, 2021.
 
