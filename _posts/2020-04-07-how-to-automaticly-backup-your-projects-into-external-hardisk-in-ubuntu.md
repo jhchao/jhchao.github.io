@@ -1,65 +1,43 @@
 ---
 layout: post
-title:  "How to automaticly backup your projects into external hardisk in ubuntu?"
-date:   2020-04-07 14:32:04 +0700
-categories: [bash, linux, ubuntu]
+title:  "Jupyter Notebook with Stata"
+date:   2021-12-11 14:32:04 +0700
+categories: [STATA, Python, Jupyter Notebook]
 ---
 
-Rsync, which stands for "remote sync", is a remote and local file synchronization tool.
-It uses an algorithm that minimizes the amount of data copied by only moving the portions of files that have changed.
-So, you can use `rsync` to handle this case.
+Jupyter Notebook is a powerful and easy-to-use web application that allows you to combine executable code, visualizations, mathematical equations and formulas, narrative text, and other rich media in a single document (a "notebook") for interactive computing and developing. Jupyter notebooks have been widely used by researchers and scientists to share their ideas and results for collaboration and innovation.
 
-Rsync is a very flexible network-enabled syncing tool.
-It can also refer to the network protocol developed to utilize this tool.
-When we reference rsync in this guide, we are mainly referring to the utility, and not the protocol.
+Now, you can invoke Stata and Mata from Jupyter Notebooks with the IPython (interactive Python) kernel, meaning you can combine the capabilities of both Python and Stata in a single environment to make your work easily reproducible and shareable with others.
 
-Due to its ubiquity on Linux and Unix-like systems and its popularity as a tool for system scripts,
-it is included on most Linux distributions by default.
+Let's see it work
+In Jupyter Notebook, you can use two set of tools provided by the pystata Python package to interact with Stata:
 
-For example:
-
-```bash
-rsync -a --exclude "*.pyc" /path/to/origin-directory/* /path/to/destination/
-```
-
-And then, add your command into bash file:
+Three IPython (interactive Python) magic commands: stata, mata, and pystata
+A suite of API functions
+Before showing you how to use these tools, we configure the pystata package. Suppose you have Stata installed in C:\Program Files\Stata17\ and you use the Stata/MP edition. Stata can be initialized as follows:
 
 
 ```bash
-#!/bin/bash
-
-ORIGIN="/home/yourusername/projects/*"
-DESTINATION="/media/yourusername/Elements/jobs/projects/"
-
-if [ -d $DESTINATION ]; then
-    rsync -a --exclude "*.pyc" $ORIGIN $DESTINATION;
-    echo "Updated at:" $(date);
-else
-    echo "Path $DESTINATION not found.";
-    echo "Not updated at:" $(date);
-fi
+import stata_setup
+stata_setup.config("C:/Program Files/Stata17", "mp")
 ```
 
-Change mode for your bash file:
+If you get output similar to what is shown above for your edition of Stata, it means that everything is configured properly; see Configuration for more ways to configure pystata.
+
+
+Call Stata using magic commands
+
+The stata magic is used to execute Stata commands in an IPython environment. In a notebook cell, we put Stata commands underneath the %%stata cell magic to direct the cell to call Stata. The following commands load the auto dataset and summarize the mpg variable. The Stata output is displayed underneath the cell.
+
+
+```bash
+%%stata
+sysuse auto, clear
+summarize mpg
+```
+
+Stata's graphs can also be displayed in the IPython environment. Here we create a scatterplot of car mileage against price by using the %stata line magic.
 
 ```
-$ chmod +x autosync.sh
-```
-
-Don't miss to add into cronjobs
-
-```
-$ crontab -e
-```
-
-then, in your editor:
-
-
-```
-# Select shell mode
-SHELL=/bin/bash
-
-
-# sync the folders for every hours, for more: https://crontab.guru/every-1-hour
-0 * * * * /home/yourusername/tools/autosync.sh > /yourusername/tools/autosync.log 2>&1
+%stata scatter mpg price
 ```
