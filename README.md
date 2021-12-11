@@ -21,6 +21,8 @@
 * Google analytics
 * HTML Minify _(Compress HTML)_ using [Jekyll Compress HTML](https://github.com/penibelst/jekyll-compress-html)
 
+
+
 ---
 layout: post                          # (require) default post layout
 title: "Your Title"                   # (require) a string title
