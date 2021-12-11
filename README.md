@@ -1,10 +1,10 @@
-## My Stack Problems
+## 蒋和超-SWUFE
 
 > This project forked and has been modified from [A simple grey theme for Jekyll](https://github.com/liamsymonds/simplygrey-jekyll),
 > and the search posts using [Super Search](https://github.com/chinchang/super-search)
 
 ### Demo
-* [https://agusmakmun.github.io](https://agusmakmun.github.io)
+* [https://jhchao.github.io](https://jhchao.github.io)
 
 #### Features
 
@@ -58,7 +58,7 @@ Inside the file of it,
 ---
 layout: post                          # (require) default post layout
 title: "Your Title"                   # (require) a string title
-date: 2016-04-20 19:51:02 +0700       # (require) a post date
+date: 2021-04-20 19:51:02 +0700       # (require) a post date
 categories: [python, django]          # (custom) some categories, but makesure these categories already exists inside path of `category/`
 tags: [foo, bar]                      # (custom) tags only for meta `property="article:tag"`
 image: Broadcast_Mail.png             # (custom) image only for meta `property="og:image"`, save your image inside path of `static/img/_posts`
