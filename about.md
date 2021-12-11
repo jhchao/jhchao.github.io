@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django. Now, I am doing more on backend.
+蒋和超，西南财经大学社会发展研究院，社会学博士，硕导.主要研究方向：应用社会学、金融社会学、计算社会学.
 
-email: agus[at]python.web.id
+email: chianghechao[at]163.com
