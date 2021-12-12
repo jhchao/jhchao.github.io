@@ -35,7 +35,7 @@ data = json_normalize(data, 'records', ['hospital_id', 'month'])
 from pystata import stata
 stata.pdataframe_to_data(data, True)
 
-# Run block of Stata code 
+### Run block of Stata code 
 stata.run('''
 destring satisfaction_score, replace
 destring hospital_id, replace
@@ -69,6 +69,7 @@ stata.run("graph export did.svg, replace", quietly=True)
 
 We use the API function in a Python script, did.py, to interact with Stata. Some highlights of the code are
 
+```python
 # Setup Stata from within Python
 import stata_setup
 stata_setup.config("C:/Program Files/Stata17", "se")
@@ -99,3 +100,5 @@ print("The result is with 95%% confidence interval [%5.2f, %5.2f]." % (r[4][0], 
 # Generate Stata graph in Python
 stata.run("estat trendplots", echo=True)
 stata.run("graph export did.svg, replace", quietly=True)
+
+```
