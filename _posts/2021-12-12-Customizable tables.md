@@ -16,5 +16,6 @@ or a table for your paper in Word that looks like
 You can create a lot of different tables directly from the reimagined table command—from simple cross-tabulations all the way to comparative regression tables.
 
 ![sumstats-2](https://www.stata.com/new-in-stata/tables/img/sumstats-2.png)
+
 Multiway means, SEs, frequencies, and percentages
 
