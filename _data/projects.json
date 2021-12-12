@@ -28,10 +28,10 @@
 		"tags": ["NetLogo","ABM"]
 	},
 	{
-		"name": "Epidata",
+		"name": "ArcGIS",
 		"image": "placeholder.jpg",
 		"date": "Oct 2021",
-		"tags": ["Epidata","data"]
+		"tags": ["ArcGIS","Spatial"]
 	},
 	{
 		"name": "Ubuntu",
