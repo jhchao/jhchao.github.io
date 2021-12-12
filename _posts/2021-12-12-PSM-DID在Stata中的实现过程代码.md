@@ -70,9 +70,7 @@ reg ln_w did time treated $xlist
 xtreg ln_w did time treated $xlist i.year, fe
 ```
 
-## PSM-DID部分结束
-
-### DID方法需要满足的五个条件检验
+## DID方法需要满足的五个条件检验
 
 **1.共同趋势假设检验**
 ```
