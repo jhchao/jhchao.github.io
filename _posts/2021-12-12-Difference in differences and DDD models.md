@@ -25,7 +25,7 @@ didregress (satis) (procedure), group(hospital) time(month)
 
 The first set of parentheses is used to specify the outcome of interest followed by the covariates in the model. In this case, there are no covariates. The second set of parentheses is used to specify the binary variable that indicates the treated observations, procedure. The group() and time() options are used to construct group and time fixed effects that are included in the model. The variable specified in group() defines the level of clustering for the default cluster–robust standard errors. For this example, we cluster at the hospital level. The results from this command are
 
-![21-12-table1](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/_posts/21-12-table1.jpg)
+![21-12-table1](https://github.com/jhchao/jhchao.github.io/blob/master/static/img/_posts/21-12-table1.JPG)
 
 
 The first table gives information about the control and treatment groups and about treatment timing. The first section tells us that 28 hospitals continued to use the old procedure and 18 hospitals switched to the new one. The second section tells us that all hospitals that implemented the new procedure did so in the fourth time period. If some hospitals had adopted the policy later, the minimum and maximum time of the first treatment would differ.
@@ -37,7 +37,7 @@ One of the assumptions this model makes is that the trajectories of satis are pa
 ```
 estat trendplots
 ``` 
-![21-12-trendplot](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/_posts/21-12-trendplot.png)
+![21-12-trendplot](https://github.com/jhchao/jhchao.github.io/blob/master/static/img/_posts/21-12-trendplot.png)
 
 
 Prior to the policy implementation, control and treatment hospitals followed a parallel path. We can further evaluate this assumption using a parallel-trends test with estat ptrends.
@@ -93,7 +93,7 @@ We can add the varying option if we wanted to allow some of the coefficients to 
 ```
 didregress (satis) (procedure), group(hospital) time(month) wildbootstrap(rseed(111))
 ```
-![21-12-table2](https://raw.githubusercontent.com/agusmakmun/agusmakmun.github.io/master/static/img/_posts/21-12-table2.jpg)
+![21-12-table2](https://github.com/jhchao/jhchao.github.io/blob/master/static/img/_posts/21-12-table2.JPG)
 
 The confidence interval and p-value above provide reliable inference for cases where the number of groups is small. These results can be interpreted in the same way as our original model.
 
