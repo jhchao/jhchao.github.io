@@ -9,9 +9,13 @@ categories: [python, stata]
 PyStata allows you to invoke Stata directly from any standalone Python environment and to call Python directly from Stata, thus, greatly expanding Stata's Python integration features.
 
 New features in PyStata include:
+
 1.the ability to use Stata from an IPython kernel-related environment like Jupyter Notebook, Spyder IDE, or PyCharm IDE;
+
 2.the ability to use Stata from Python Shell, like the Windows Command Prompt, the macOS terminal, or the Unix terminal;
+
 3.three IPython magic commands: stata, mata, and pystata; and
+
 4.a suite of API functions from within Python to run Stata commands and access Stata data and returned results.
 These tools, together with the Stata Function Interface (sfi) module, allow users to easily integrate Stata's vast statistical and data management methods into any data science project using Python.
 
