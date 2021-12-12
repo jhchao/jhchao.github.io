@@ -36,9 +36,9 @@ One of the assumptions this model makes is that the trajectories of satis are pa
 
 ```
 estat trendplots
-``` 
-![21-12-trendplot](https://github.com/jhchao/jhchao.github.io/blob/master/static/img/_posts/21-12-trendplot.png)
-
+ 
+[21-12-trendplot](https://github.com/jhchao/jhchao.github.io/blob/master/static/img/_posts/21-12-trendplot.png)
+```
 
 Prior to the policy implementation, control and treatment hospitals followed a parallel path. We can further evaluate this assumption using a parallel-trends test with estat ptrends.
 
