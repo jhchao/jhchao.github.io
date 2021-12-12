@@ -25,8 +25,33 @@ didregress (satis) (procedure), group(hospital) time(month)
 
 The first set of parentheses is used to specify the outcome of interest followed by the covariates in the model. In this case, there are no covariates. The second set of parentheses is used to specify the binary variable that indicates the treated observations, procedure. The group() and time() options are used to construct group and time fixed effects that are included in the model. The variable specified in group() defines the level of clustering for the default cluster–robust standard errors. For this example, we cluster at the hospital level. The results from this command are
 
-![21-12-table1](https://raw.githubusercontent.com/jhchao/jhchao.github.io/master/static/img/_posts/21-12-table1.png)
+```
+Number of groups and treatment time
 
+Time variable: month
+Control:       procedure = 0
+Treatment:     procedure = 1
+             	 	   Control  Treatment
+Group        	 	                     
+    hospital 	 	        28         18
+Time         	 	                     
+     Minimum 	 	         1          4
+     Maximum 	 	         1          4
+
+
+Difference in differences regression                     Number of obs = 7,368
+Data type: Repeated cross-sectional
+
+                              (Std. err. adjusted for 46 clusters in hospital)
+             	 	               Robust                          
+       stais 	 	 Coefficient  std. err.      t    P>|t|     [95% conf. interval]
+ATET         	 	                                                          
+   procedure 	 	                                                          
+       (New  	 	                                                          
+         vs  	 	                                                          
+       Old)  	 	   .8479879   .0321121    26.41   0.000     .7833108     .912665
+ Note: ATET estimate adjusted for group effects and time effects.
+```
 
 The first table gives information about the control and treatment groups and about treatment timing. The first section tells us that 28 hospitals continued to use the old procedure and 18 hospitals switched to the new one. The second section tells us that all hospitals that implemented the new procedure did so in the fourth time period. If some hospitals had adopted the policy later, the minimum and maximum time of the first treatment would differ.
 
