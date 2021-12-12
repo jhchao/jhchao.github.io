@@ -92,9 +92,42 @@ We can add the varying option if we wanted to allow some of the coefficients to 
 
 ```
 didregress (satis) (procedure), group(hospital) time(month) wildbootstrap(rseed(111))
-```
 
-![21-12-table2](https://raw.githubusercontent.com/jhchao/jhchao.github.io/master/static/img/_posts/21-12-table2.png)
+computing 1000 replications
+
+Finding p-value
+.................................................. 50%
+................................................. 100%
+Confidence interval lower bound
+...
+Confidence interval upper bound
+...
+
+Number of groups and treatment time
+
+Time variable: month
+Control:       procedure = 0
+Treatment:     procedure = 1
+             	 	   Control  Treatment
+Group        	 	                     
+    hospital 	 	         7          8
+Time         	 	                     
+     Minimum 	 	         1          4
+     Maximum 	 	         1          4
+
+
+DID with wild-cluster bootstrap inference              Number of obs   = 2,192
+                                                       No. of clusters =    15
+                                                       Replications    = 1,000
+Data type:    Repeated cross-sectional
+Error weight: rademacher
+
+       stais 	 	 Coefficient     t    P>|t|     [95% conf. interval]
+ATET         	 	                                                    
+   procedure 	 	                                                    
+(New vs Old) 	 	   .860162    19.72   0.000     .7714875    .9587552
+ Note: ATET estimate adjusted for group effects and time effects.
+```
 
 The confidence interval and p-value above provide reliable inference for cases where the number of groups is small. These results can be interpreted in the same way as our original model.
 
