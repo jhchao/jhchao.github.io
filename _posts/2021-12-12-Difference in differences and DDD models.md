@@ -14,7 +14,8 @@ Difference in difference in differences (DDD) adds a control group to the DID fr
 Examples of treatment effects include examining the effects of a drug regimen on blood pressure, a surgical procedure on mobility, a training program on employment, or an ad campaign on sales.
 
 
-##Let's see it work
+## Let's see it work
+
 A health provider wants to study the effect of a new hospital admissions procedure on patient satisfaction using monthly data on patients before and after the new procedure was implemented in some of their hospitals. The health provider will use DID regression to analyze the effect of the new admissions procedure on the hospitals that participated in the program. The outcome of interest is patient satisfaction, satis, and the treatment variable is procedure. We can fit this model using didregress.
 
 ```
@@ -97,7 +98,7 @@ didregress (satis) (procedure), group(hospital) time(month) wildbootstrap(rseed(
 The confidence interval and p-value above provide reliable inference for cases where the number of groups is small. These results can be interpreted in the same way as our original model.
 
 
-##References
+## References
 
 Bell, R. M., and D. F. McCaffrey. 2002. Bias reduction in standard errors for linear regression with multi-stage samples. Survey Methodology 28: 169181.
 
