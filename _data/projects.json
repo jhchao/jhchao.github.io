@@ -4,39 +4,39 @@
 		"name": "Stata",
 		"image": "stata.jpg",
 		"url": "https://www.google.com",
-		"date": "Jan 2021",
+		"date": "Dec 2021",
 		"tags": ["Stata","dofile"]
 	},
 	{
 		"name": "Python",
 		"image": "python.jpg",
 		"url": "#",
-		"date": "May 2021",
+		"date": "Dec 2021",
 		"tags": ["Python","jupyter Lab"]
 	},
 	{
 		"name": "R语言",
 		"image": "rlong.jpg",
 		"url": "#",
-		"date": "June 2021",
+		"date": "Dec 2021",
 		"tags": ["R","Rstudio"]
 	},
 	{
 		"name": "NetLogo",
 		"image": "netlogo.png",
-		"date": "Oct 2021",
+		"date": "Dec 2021",
 		"tags": ["NetLogo","ABM"]
 	},
 	{
 		"name": "ArcGIS",
 		"image": "arcgis.jpg",
-		"date": "Oct 2021",
+		"date": "Dec 2021",
 		"tags": ["ArcGIS","Spatial"]
 	},
 	{
 		"name": "Epidata",
 		"image": "epidata.jpg",
-		"date": "Oct 2021",
+		"date": "Dec 2021",
 		"tags": ["Epidata"]
 	}
 ]
