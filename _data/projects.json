@@ -2,40 +2,40 @@
 	{
 		"slug": "Computational Social Science Training Program",
 		"name": "Stata",
-		"image": "placeholder.jpg",
+		"image": "stata.jpg",
 		"url": "https://www.google.com",
 		"date": "Jan 2021",
 		"tags": ["Stata","dofile"]
 	},
 	{
 		"name": "Python",
-		"image": "placeholder.jpg",
+		"image": "python.jpg",
 		"url": "#",
 		"date": "May 2021",
 		"tags": ["Python","jupyter Lab"]
 	},
 	{
 		"name": "R语言",
-		"image": "placeholder.jpg",
+		"image": "rlong.jpg",
 		"url": "#",
 		"date": "June 2021",
 		"tags": ["R","Rstudio"]
 	},
 	{
 		"name": "NetLogo",
-		"image": "placeholder.jpg",
+		"image": "netlogo.jpg",
 		"date": "Oct 2021",
 		"tags": ["NetLogo","ABM"]
 	},
 	{
 		"name": "ArcGIS",
-		"image": "placeholder.jpg",
+		"image": "arcgis.jpg",
 		"date": "Oct 2021",
 		"tags": ["ArcGIS","Spatial"]
 	},
 	{
 		"name": "Epidata",
-		"image": "placeholder.jpg",
+		"image": "epidata.jpg",
 		"date": "Oct 2021",
 		"tags": ["Epidata"]
 	}
