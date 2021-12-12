@@ -34,9 +34,9 @@
 		"tags": ["ArcGIS","Spatial"]
 	},
 	{
-		"name": "Ubuntu",
+		"name": "Epidata",
 		"image": "placeholder.jpg",
 		"date": "Oct 2021",
-		"tags": ["Ubuntu"]
+		"tags": ["Epidata"]
 	}
 ]
